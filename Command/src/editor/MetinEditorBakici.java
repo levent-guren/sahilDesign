@@ -32,8 +32,9 @@ public class MetinEditorBakici {
 	}
 
 	public void geriAl(int islemSayisi) {
-		while (islemSayisi < commands.size() && commands.size() > 0) {
+		while (islemSayisi > 0 && commands.size() > 0) {
 			getSonIslem().islemiGeriAl();
+			islemSayisi--;
 		}
 	}
 
